@@ -1,0 +1,45 @@
+/* FONT IMPORT */
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+/* VARIABLES */
+:root {
+  /* COLORS Cyan*/
+  --color-cyan-600: hsl(192, 37%, 48%);
+  --color-cyan-300: hsl(192, 90%, 77%);
+  /* COLORS Purple */
+  --color-purple-600: hsl(268, 34%, 53%);
+  --color-purple-300: hsl(268, 100%, 86%);
+  /* COLORS Slate */
+  --color-state-900: hsl(240, 21%, 20%);
+  --color-slate-600: hsl(240, 10%, 57%);
+  --color-slate-300: hsl(240, 18%, 85%);
+  /* COLORS White */
+  --color-white: hsl(0, 0%, 98%);
+
+  /* FONT FAMILY */
+  --font-primary: "Red Hat Display", sans-serif;
+
+  /* SPACING */
+  --spacing-1400: 7rem;
+  --spacing-1000: 5rem;
+  --spcaing-900: 4rem;
+  --spacing-800: 3rem;
+  --spacing-700: 2rem;
+  --spacing-600: 1.5rem;
+  --spacing-500: 1rem;
+  --spacing-400: 0.75rem;
+  --spacing-300: 0.5rem;
+  --spacing-200: 0.25rem;
+  --spacing-100: 0.125rem;
+  --spacing-50: 0.0625rem;
+}
+/* RESET */
+
+/* GLOBAL STYLES */
+
+/* TYPOGRAPHY */
+
+/* LAYOUT */
+
+/* COMPONENTS */
+
+/* MEDIA QUERIES */
