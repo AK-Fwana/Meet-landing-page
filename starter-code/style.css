@@ -71,6 +71,7 @@ p {
   font-weight: 900;
   line-height: 110%;
   text-align: center;
+  max-width: 18rem;
 }
 
 .content-title {
@@ -96,10 +97,17 @@ p {
   font-weight: 900;
   line-height: 110%;
   text-align: center;
+  max-width: 19rem;
 }
 .experience-title,
 .experience-description {
   color: var(--color-white);
+}
+
+.hero-content,
+.content-text,
+.footer-content {
+  text-align: center;
 }
 
 /* LAYOUT */
@@ -107,6 +115,7 @@ header {
   display: flex;
   justify-content: center;
   padding-top: var(--spacing-800);
+  padding-bottom: var(--spacing-700);
 }
 
 .hero-image-left,
@@ -127,8 +136,14 @@ header {
   align-items: center;
   justify-content: center;
   gap: var(--spacing-300);
-  margin-top: var(--spacing-800);
+  margin-top: var(--spacing-700);
   padding-inline: var(--spacing-500);
+}
+
+.share-message,
+.content-description,
+.experience-description {
+  max-width: 19rem;
 }
 
 .btn-container {
@@ -137,20 +152,28 @@ header {
   align-items: center;
   gap: var(--spacing-500);
 }
+.group-chat,
+.share-message,
+.content-h2,
+.content-description,
+.experience-title,
+.experience-description {
+  overflow-wrap: break-word;
+}
 
 .main-content {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: var(--spacing-800);
-  margin-top: var(--spacing-900);
+  margin-top: var(--spacing-700);
   padding-inline: var(--spacing-600);
 }
 .content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: var(--spacing-500);
+  gap: var(--spacing-800);
 }
 
 .image-grid {
@@ -168,6 +191,7 @@ header {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  gap: var(--spacing-500);
 }
 /* COMPONENTS */
 
@@ -179,6 +203,8 @@ header {
   align-items: center;
   padding: var(--spacing-400) var(--spacing-700);
   border-radius: var(--radius-btn);
+  font-weight: 700;
+  font-size: 1rem;
   border: none;
   cursor: pointer;
   color: var(--color-white);
@@ -187,9 +213,23 @@ header {
 .download-btn {
   background-color: var(--color-cyan-600);
 }
-.info-btn,
-.download-btn-footer {
+.info-btn {
   background-color: var(--color-purple-600);
+}
+
+.download-btn-footer {
+  background-color: rgba(133, 95, 177, 0.85);
+}
+
+.btn-text,
+.btn-footer-text {
+  margin-left: var(--spacing-200);
+}
+.btn-text {
+  color: var(--color-cyan-300);
+}
+.btn-footer-text {
+  color: var(--color-purple-300);
 }
 
 .section-marker {
@@ -208,9 +248,19 @@ header {
   bottom: 100%;
   left: 50%;
   width: 1px;
-  height: var(--spacing-800);
+  height: var(--spacing-900);
   background-color: var(--color-slate-300);
   transform: translateX(-50%);
+}
+.content .section-marker,
+.section-marker-footer {
+  margin-top: var(--spacing-1000);
+}
+
+.section-marker-footer {
+  background-color: var(--color-white);
+  z-index: 2;
+  margin-bottom: calc(var(--marker-size) / -2);
 }
 
 .footer-cta {
@@ -221,8 +271,8 @@ header {
   justify-content: center;
   align-items: center;
   gap: var(--spacing-500);
-  padding: var(--spacing-900) var(--spacing-600) var(--spacing-600);
-  margin-top: calc(var(--marker-size) / 2);
+  padding: calc(var(--spacing-900) + var(--marker-size)) var(--spacing-600)
+    var(--spacing-600);
   background-image:
     linear-gradient(
       to bottom,
@@ -231,7 +281,7 @@ header {
     ),
     url("./assets/mobile/image-footer.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: center 40%;
 }
 .footer-content {
   display: flex;
@@ -239,7 +289,8 @@ header {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  gap: var(--spacing-300);
+  gap: var(--spacing-600);
+  padding-inline: var(--spacing-500);
 }
 
 .attribution a {
