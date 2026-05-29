@@ -413,4 +413,47 @@ header {
   .experience-description {
     max-width: 20rem;
   }
+  .download-btn,
+  .info-btn,
+  .download-btn-footer {
+    transition:
+      background-color 0.3s ease,
+      transform 0.3s ease;
+  }
+
+  .download-btn:hover {
+    background-color: var(--color-cyan-300);
+    transform: translateY(-2px);
+  }
+
+  .info-btn:hover,
+  .download-btn-footer:hover {
+    background-color: var(--color-purple-300);
+    transform: translateY(-2px);
+  }
+  .hero-image-left img,
+  .hero-image-right img {
+    transition: transform 0.3s ease;
+  }
+
+  .hero-image-left img:hover,
+  .hero-image-right img:hover {
+    transform: scale(1.03);
+  }
+  .image-grid img {
+    transition:
+      transform 0.3s ease,
+      box-shadow 0.3s ease;
+  }
+
+  .image-grid img:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  }
+  .download-btn:focus-visible,
+  .info-btn:focus-visible,
+  .download-btn-footer:focus-visible {
+    outline: 3px solid var(--color-cyan-300);
+    outline-offset: 3px;
+  }
 }
