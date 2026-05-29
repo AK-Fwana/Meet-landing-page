@@ -363,16 +363,17 @@ header {
     align-items: center;
     column-gap: var(--spacing-1400);
     padding-inline: 0;
+    overflow: hidden;
   }
 
   .hero-image-left {
     justify-self: end;
-    transform: translateX(2rem);
+    transform: translateX(1rem);
   }
 
   .hero-image-right {
     justify-self: start;
-    transform: translateX(-2rem);
+    transform: translateX(-1rem);
   }
 
   .hero-content {
