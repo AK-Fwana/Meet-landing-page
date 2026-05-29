@@ -36,8 +36,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/AK-Fwana/Meet-landing-page)
-- Live Site URL: [Add live site URL here](https://ak-fwana.github.io/Meet-landing-page/)
+- Solution URL: (https://github.com/AK-Fwana/Meet-landing-page)
+- Live Site URL: (https://ak-fwana.github.io/Meet-landing-page/)
 
 ## My process
 
