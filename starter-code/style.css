@@ -302,21 +302,37 @@ header {
 @media (min-width: 48rem) {
   .btn-container {
     flex-direction: row;
+    margin-top: var(--spacing-500);
   }
-
+  .hero-content {
+    margin-bottom: var(--spacing-800);
+  }
+  .content {
+    margin-top: var(--spacing-700);
+  }
   .group-chat {
-    max-width: 22rem;
+    max-width: 18rem;
   }
-
   .share-message,
-  .content-description,
-  .experience-description {
-    max-width: 28rem;
-  }
-
-  .content-h2,
   .experience-title {
     max-width: 28rem;
+  }
+  .content-h2 {
+    max-width: 25rem;
+    text-align: center;
+  }
+  .experience-description {
+    max-width: 31.25rem;
+  }
+
+  .content-description {
+    max-width: 35.8125rem;
+  }
+
+  .download-btn,
+  .info-btn,
+  .download-btn-footer {
+    padding: var(--spacing-500) var(--spacing-700);
   }
 
   .image-grid {
