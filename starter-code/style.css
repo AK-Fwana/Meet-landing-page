@@ -357,11 +357,22 @@ header {
   }
 
   .hero {
+    width: 100%;
     display: grid;
-    grid-template-columns: 1fr minmax(20rem, 28rem) 1fr;
+    grid-template-columns: minmax(0, 1fr) minmax(20rem, 28rem) minmax(0, 1fr);
     align-items: center;
-    gap: var(--spacing-700);
+    column-gap: var(--spacing-1400);
     padding-inline: 0;
+  }
+
+  .hero-image-left {
+    justify-self: end;
+    transform: translateX(2rem);
+  }
+
+  .hero-image-right {
+    justify-self: start;
+    transform: translateX(-2rem);
   }
 
   .hero-content {
@@ -376,5 +387,30 @@ header {
 
   .share-message {
     max-width: 28rem;
+  }
+  .footer-cta {
+    background-image:
+      linear-gradient(rgba(77, 150, 168, 0.88), rgba(77, 150, 168, 0.88)),
+      url("./assets/desktop/image-footer.jpg");
+  }
+  .footer-content {
+    display: flex;
+    max-width: 70rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    gap: var(--spacing-1000);
+  }
+
+  .experience-title,
+  .experience-description {
+    text-align: left;
+  }
+  .experience-title {
+    max-width: 20rem;
+  }
+  .experience-description {
+    max-width: 20rem;
   }
 }
