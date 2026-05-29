@@ -30,12 +30,14 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./assets/desktop-screenshot.jpeg)
+![](./assets/tablet-screenshot.jpeg)
+![](./assets/phone-screenshot.jpeg)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/AK-Fwana/Meet-landing-page)
+- Live Site URL: [Add live site URL here](https://ak-fwana.github.io/Meet-landing-page/)
 
 ## My process
 
