@@ -346,3 +346,35 @@ header {
       url("./assets/tablet/image-footer.jpg");
   }
 }
+@media (min-width: 64rem) {
+  .hero-tablet-image {
+    display: none;
+  }
+
+  .hero-image-left,
+  .hero-image-right {
+    display: block;
+  }
+
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr minmax(20rem, 28rem) 1fr;
+    align-items: center;
+    gap: var(--spacing-700);
+    padding-inline: 0;
+  }
+
+  .hero-content {
+    margin-top: 0;
+    padding-inline: 0;
+  }
+
+  .group-chat {
+    max-width: 28rem;
+    font-size: 4rem;
+  }
+
+  .share-message {
+    max-width: 28rem;
+  }
+}
